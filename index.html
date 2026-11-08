@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ONG SRD | Proteção animal em Caxias do Sul</title>
+  <meta name="description" content="A ONG SRD (Sem Raça Definida) averigua denúncias de maus-tratos, resgata animais e promove adoções responsáveis em Caxias do Sul (RS).">
+  <meta name="theme-color" content="#b13262">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/vendor/gsap.min.js" defer></script>
+  <script src="js/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-menu" viewBox="0 0 24 24">
+      <path d="M4 7h16M4 12h16M4 17h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-fechar" viewBox="0 0 24 24">
+      <path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-anterior" viewBox="0 0 24 24">
+      <path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-proxima" viewBox="0 0 24 24">
+      <path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24">
+      <rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <circle cx="12" cy="12" r="3.8" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <circle cx="17" cy="7" r="1.1" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M13.4 21v-7.6h2.5l.4-3h-2.9V8.5c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.2H7.9v3h2.5V21h3z"/>
+    </symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 3.5a8.5 8.5 0 0 0-7.3 12.8L3.5 20.5l4.3-1.1A8.5 8.5 0 1 0 12 3.5z"/>
+      <path fill="currentColor" d="M9.3 7.6c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.7 1.7c.1.2 0 .4-.1.6l-.5.6c-.1.1-.2.3-.1.5.5.8 1.5 1.9 2.7 2.5.2.1.4.1.5-.1l.7-.8c.2-.2.4-.2.6-.1l1.6.8c.2.1.4.2.4.4.1.4-.1 1.1-.5 1.5-.5.5-1.3.8-2.1.6-1.4-.3-3-1.2-4.1-2.4-1.1-1.1-1.9-2.5-2.1-3.8-.1-.8.2-1.6.5-2z"/>
+    </symbol>
+  </svg>
+
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="cabecalho">
+    <div class="container cabecalho__barra">
+      <a class="cabecalho__logo" href="#inicio">
+        <img src="img/logo-srd.webp" alt="ONG SRD, início" width="200" height="276">
+      </a>
+
+      <button class="cabecalho__botao-menu" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <svg class="icone" aria-hidden="true"><use href="#i-menu"/></svg>
+        <span>Menu</span>
+      </button>
+
+      <nav class="menu" id="menu-principal" aria-label="Seções da página">
+        <ul class="menu__lista">
+          <li><a href="#quem-somos">Quem somos</a></li>
+          <li><a href="#acoes">Ações</a></li>
+          <li><a href="#impacto">Impacto</a></li>
+          <li><a href="#adote">Adote</a></li>
+          <li><a href="#denuncie">Denuncie</a></li>
+          <li><a href="#brecho">Brechó</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <a class="botao botao--cheio menu__acao" href="#como-ajudar">Quero ajudar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <section class="destaque" id="inicio" aria-labelledby="destaque-titulo">
+      <div class="container destaque__grade">
+        <div class="destaque__texto">
+          <h1 id="destaque-titulo">Justiça para quem não tem voz.</h1>
+          <p class="destaque__lead">A ONG SRD (Sem Raça Definida) combate os maus-tratos contra animais em Caxias do Sul. Averiguamos denúncias, resgatamos quem está em perigo e buscamos um lar responsável para cada um.</p>
+          <div class="destaque__acoes">
+            <a class="botao botao--cheio" href="#como-ajudar">Quero ajudar</a>
+            <a class="botao botao--contorno" href="#denuncie">Fazer uma denúncia</a>
+          </div>
+        </div>
+
+        <div class="destaque__circulos">
+          <span class="destaque__sol" aria-hidden="true"></span>
+          <img class="circulo destaque__foto"
+               src="img/destaque-cartaz-520.webp"
+               srcset="img/destaque-cartaz-520.webp 520w, img/destaque-cartaz-1040.webp 1040w"
+               sizes="(min-width: 1080px) 440px, 70vw"
+               width="520" height="520" fetchpriority="high"
+               alt="Mulher ajoelhada na rua abraça um cão branco e preto que segura um cartaz de protesto escrito à mão.">
+          <img class="circulo destaque__pet destaque__pet--a" src="img/destaque-franco-218.webp" width="218" height="218" alt="">
+          <img class="circulo destaque__pet destaque__pet--b" src="img/destaque-tico-240.webp" width="240" height="240" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="quem-somos" id="quem-somos" aria-labelledby="quem-somos-titulo">
+      <div class="container">
+        <div class="quem-somos__intro">
+          <h2 id="quem-somos-titulo">Quem somos</h2>
+          <div>
+            <p class="lead">Nascemos do inconformismo de pessoas que se recusaram a fechar os olhos para o sofrimento animal e doaram seu tempo para fazer o bem.</p>
+            <p>Hoje somos uma organização sem fins lucrativos que atua todos os dias na averiguação de crimes de maus-tratos em Caxias do Sul (RS). A ONG foi fundada e é presidida por Andressa Mallmann e se mantém com o trabalho de voluntárias e voluntários, com a renda do Brechó SRD e com doações da comunidade.</p>
+          </div>
+        </div>
+
+        <div class="principios">
+          <article class="principios__missao">
+            <h3>Missão</h3>
+            <p class="principios__frase">Lutar por justiça para quem não tem voz.</p>
+          </article>
+
+          <article class="principios__visao">
+            <h3>Visão</h3>
+            <p>Uma Caxias do Sul em que nenhum caso de maus-tratos fique sem resposta e em que cada animal resgatado encontre um lar responsável.</p>
+          </article>
+
+          <article class="principios__objetivos">
+            <h3>Objetivos</h3>
+            <ul class="lista-circulos">
+              <li>Averiguar denúncias de maus-tratos com apoio de veterinários e das forças de segurança.</li>
+              <li>Resgatar animais em situação de risco e garantir o tratamento de que precisam.</li>
+              <li>Levar os casos às autoridades para que os agressores sejam investigados e responsabilizados.</li>
+              <li>Promover adoções responsáveis, com entrevista e visita antes de cada adoção.</li>
+              <li>Informar a comunidade sobre o que são maus-tratos e como denunciar.</li>
+            </ul>
+          </article>
+
+          <article class="principios__valores">
+            <h3>Valores</h3>
+            <p>Nosso trabalho segue as Cinco Liberdades do bem-estar animal. Todo animal deve viver:</p>
+            <ul class="lista-circulos">
+              <li>livre de fome e sede;</li>
+              <li>livre de desconforto;</li>
+              <li>livre de dor, ferimentos e doenças;</li>
+              <li>livre para expressar seu comportamento natural;</li>
+              <li>livre de medo e estresse.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="trajetoria">
+          <div class="trajetoria__topo">
+            <h3>Nossa trajetória</h3>
+            <div class="setas">
+              <button class="seta" type="button" data-faixa="faixa-trajetoria" data-direcao="-1" aria-label="Marco anterior">
+                <svg class="icone" aria-hidden="true"><use href="#i-anterior"/></svg>
+              </button>
+              <button class="seta" type="button" data-faixa="faixa-trajetoria" data-direcao="1" aria-label="Próximo marco">
+                <svg class="icone" aria-hidden="true"><use href="#i-proxima"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="faixa trajetoria__faixa" id="faixa-trajetoria" tabindex="0" role="region" aria-label="Linha do tempo de 2023 a 2026">
+            <ol class="trajetoria__lista">
+              <li class="marco">
+                <span class="marco__ano">2023</span>
+                <h4>Caso dos gatos do Santa Fé</h4>
+                <p>Em setembro, a ONG participou, com a Brigada Militar e a Polícia Civil, do resgate de gatos vítimas de tortura no bairro Santa Fé. O suspeito foi preso em flagrante e o caso segue na Justiça.</p>
+              </li>
+              <li class="marco">
+                <span class="marco__ano">2024</span>
+                <h4>Enchentes no Rio Grande do Sul</h4>
+                <p>Em maio, a SRD resgatou 62 animais, 50 cães e 12 gatos, em Caxias do Sul, Roca Sales, Novo Hamburgo e Estrela. Em março, uma operação com a Polícia Civil no Centro tirou quatro cães e duas calopsitas de uma situação de maus-tratos.</p>
+              </li>
+              <li class="marco">
+                <span class="marco__ano">2025</span>
+                <h4>Exposição e crise</h4>
+                <p>Em fevereiro, uma exposição de fotos na Câmara de Vereadores apresentou os animais à espera de adoção. Em junho, a ONG anunciou o fim das atividades por falta de recursos, mas seguiu atuando e continua ativa.</p>
+              </li>
+              <li class="marco">
+                <span class="marco__ano">2026</span>
+                <h4>Arraiá e nova prisão</h4>
+                <p>Em julho, o 1º Arraiá beneficente reuniu a comunidade na sede, com entrada mediante 1 kg de ração. Em agosto, uma denúncia acompanhada pela ONG levou à prisão em flagrante de uma suspeita de maus-tratos contra um pitbull.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="acoes" id="acoes" aria-labelledby="acoes-titulo">
+
+      <div class="jornada">
+        <div class="container jornada__cabeca">
+          <h2 id="acoes-titulo">Nossas ações</h2>
+          <p>Do chamado ao novo lar: este é o caminho de um caso de maus-tratos dentro da ONG.</p>
+        </div>
+
+        <div class="faixa jornada__faixa" id="faixa-jornada" tabindex="0" role="region" aria-label="Etapas do trabalho da ONG">
+          <div class="jornada__trilho">
+            <ol class="jornada__lista">
+              <li class="etapa">
+                <h3>Denúncia</h3>
+                <p>Tudo começa com um aviso. Quem presencia maus-tratos envia fotos, vídeos e o endereço pelo WhatsApp da ONG ou pelo canal da Prefeitura.</p>
+              </li>
+              <li class="etapa">
+                <h3>Averiguação</h3>
+                <p>Uma equipe vai até o local verificar a situação, com apoio de veterinários e, quando preciso, da Guarda Municipal, da Brigada Militar e da Polícia Civil.</p>
+              </li>
+              <li class="etapa etapa--foto">
+                <img class="circulo etapa__foto"
+                     src="img/acoes/resgate-farelo-420.webp"
+                     srcset="img/acoes/resgate-farelo-420.webp 420w, img/acoes/resgate-farelo-840.webp 840w"
+                     sizes="(min-width: 900px) 300px, 56vw"
+                     width="420" height="420" loading="lazy" decoding="async"
+                     alt="Farelo, cão branco de olhos claros resgatado pela ONG.">
+                <h3>Resgate</h3>
+                <p>Quando o animal corre risco, ele é retirado do local e levado para atendimento. Foi assim que o Farelo, hoje à espera de adoção, saiu de um cenário muito triste.</p>
+              </li>
+              <li class="etapa etapa--foto">
+                <img class="circulo etapa__foto"
+                     src="img/acoes/cuidados-420.webp"
+                     srcset="img/acoes/cuidados-420.webp 420w, img/acoes/cuidados-840.webp 840w"
+                     sizes="(min-width: 900px) 300px, 56vw"
+                     width="420" height="420" loading="lazy" decoding="async"
+                     alt="Cão preto e caramelo recebe carinho no colo de uma pessoa.">
+                <h3>Cuidados</h3>
+                <p>Cada resgatado passa por exames e recebe tratamento, vacinas, vermífugo e castração. A recuperação acontece em lares temporários e clínicas parceiras.</p>
+              </li>
+              <li class="etapa etapa--foto">
+                <img class="circulo etapa__foto"
+                     src="img/acoes/adocao-atena-420.webp"
+                     srcset="img/acoes/adocao-atena-420.webp 420w, img/acoes/adocao-atena-668.webp 668w"
+                     sizes="(min-width: 900px) 300px, 56vw"
+                     width="420" height="420" loading="lazy" decoding="async"
+                     alt="Pessoa de camiseta rosa abraça a cadela Atena em um jardim.">
+                <h3>Adoção</h3>
+                <p>Recuperado, o animal ganha um perfil para adoção. Quem se interessa passa por entrevista, visita o animal e assina um termo de responsabilidade.</p>
+              </li>
+            </ol>
+
+            <div class="etapa etapa--final">
+              <h3>E quem cometeu os maus-tratos?</h3>
+              <p>Enquanto o animal se recupera, o caso segue com as autoridades. A ONG encaminha as provas e acompanha o andamento para que os agressores sejam responsabilizados.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container projetos">
+        <div class="projetos__coluna">
+          <h3>Projetos em andamento</h3>
+          <article class="projeto">
+            <h4>Brechó SRD</h4>
+            <p>Venda de roupas, calçados e objetos doados. É a maior fonte de renda da ONG.</p>
+            <a href="#brecho">Conheça o brechó</a>
+          </article>
+          <article class="projeto">
+            <h4>Me adota?</h4>
+            <p>Divulgação dos animais resgatados que estão prontos para ganhar uma família.</p>
+            <a href="#adote">Ver os pets</a>
+          </article>
+          <article class="projeto">
+            <h4>Informação contra maus-tratos</h4>
+            <p>Orientação sobre o que são maus-tratos e como denunciar com segurança.</p>
+            <a href="#denuncie">Saiba como denunciar</a>
+          </article>
+        </div>
+
+        <div class="projetos__coluna">
+          <h3>Projetos realizados</h3>
+          <article class="projeto">
+            <h4>Resgate nas enchentes</h4>
+            <p class="projeto__data"><time datetime="2024-05">Maio de 2024</time></p>
+            <p>62 animais resgatados em quatro cidades gaúchas e abrigados em um pavilhão emprestado até a recuperação.</p>
+          </article>
+          <article class="projeto">
+            <h4>Exposição de adoção na Câmara</h4>
+            <p class="projeto__data"><time datetime="2025-02-10">10</time> a <time datetime="2025-02-24">24 de fevereiro de 2025</time></p>
+            <p>Fotos dos cães e gatos à espera de um lar no Espaço Cultural Mário Crosa, na Câmara Municipal de Caxias do Sul.</p>
+          </article>
+          <article class="projeto">
+            <h4>1º Arraiá beneficente</h4>
+            <p class="projeto__data"><time datetime="2026-07-18">18 de julho de 2026</time></p>
+            <p>Festa na sede com shows, comidas típicas e desfile pet. A entrada era 1 kg de ração, e a renda foi para tratamentos, alimentação e resgates.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="impacto" id="impacto" aria-labelledby="impacto-titulo">
+      <div class="container">
+        <h2 id="impacto-titulo">Nosso impacto</h2>
+        <p>Números acumulados divulgados pela ONG em seu site oficial (consulta em outubro de 2026).</p>
+
+        <dl class="numeros">
+          <div class="numero numero--principal">
+            <dt>Averiguações de denúncias</dt>
+            <dd><span class="numero__valor" data-contar="2477" aria-hidden="true">+2.477</span><span class="sr">mais de 2.477</span></dd>
+          </div>
+          <div class="numero">
+            <dt>Resgates realizados</dt>
+            <dd><span class="numero__valor" data-contar="637" aria-hidden="true">+637</span><span class="sr">mais de 637</span></dd>
+          </div>
+          <div class="numero">
+            <dt>Adoções responsáveis concluídas</dt>
+            <dd><span class="numero__valor" data-contar="534" aria-hidden="true">+534</span><span class="sr">mais de 534</span></dd>
+          </div>
+          <div class="numero">
+            <dt>Processos em execução contra tutores</dt>
+            <dd><span class="numero__valor" data-contar="89" aria-hidden="true">+89</span><span class="sr">mais de 89</span></dd>
+          </div>
+          <div class="numero">
+            <dt>Prisões em flagrante</dt>
+            <dd><span class="numero__valor" data-contar="13" aria-hidden="true">+13</span><span class="sr">mais de 13</span></dd>
+          </div>
+        </dl>
+
+        <p class="impacto__enchente"><strong>62 animais</strong> resgatados durante as enchentes de maio de 2024, em Caxias do Sul, Roca Sales, Novo Hamburgo e Estrela.</p>
+      </div>
+    </section>
+
+    <section class="galeria" id="galeria" aria-labelledby="galeria-titulo">
+      <div class="container galeria__topo">
+        <h2 id="galeria-titulo">Galeria</h2>
+        <p>Animais acolhidos pela SRD e momentos do dia a dia da ONG. Clique em uma foto para ampliar.</p>
+      </div>
+
+      <div class="galeria__faixas">
+        <div class="galeria__janela">
+          <ul class="galeria__faixa">
+            <li>
+              <figure class="galeria__item">
+                <button class="galeria__botao" type="button" data-grande="img/galeria/manifestacao-1200.webp">
+                  <img src="img/galeria/manifestacao-270.webp" srcset="img/galeria/manifestacao-270.webp 270w, img/galeria/manifestacao-540.webp 540w" sizes="(min-width: 700px) 255px, 165px" width="270" height="360" loading="lazy" decoding="async" alt="Mulher ajoelhada abraça um cão branco e preto que segura um cartaz de protesto escrito à mão.">
+                </button>
+                <figcaption>Manifestação por justiça para os animais</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="galeria__item">
+                <button class="galeria__botao" type="button" data-grande="img/galeria/brecho-fachada-1200.webp">
+                  <img src="img/galeria/brecho-fachada-270.webp" srcset="img/galeria/brecho-fachada-270.webp 270w, img/galeria/brecho-fachada-540.webp 540w" sizes="(min-width: 700px) 255px, 165px" width="270" height="360" loading="lazy" decoding="async" alt="Entrada do Brechó SRD com uma bandeira rosa da ONG e roupas expostas na porta.">
+                </button>
+                <figcaption>Fachada do Brechó SRD, no bairro Rio Branco</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="galeria__item">
+                <button class="galeria__botao" type="button" data-grande="img/galeria/colo-1200.webp">
+                  <img src="img/galeria/colo-270.webp" srcset="img/galeria/colo-270.webp 270w, img/galeria/colo-540.webp 540w" sizes="(min-width: 700px) 255px, 165px" width="270" height="360" loading="lazy" decoding="async" alt="Cão preto e caramelo apoia a cabeça no colo de uma pessoa que faz carinho nele.">
+                </button>
+                <figcaption>Carinho para quem chega assustado</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="galeria__item">
+                <button class="galeria__botao" type="button" data-grande="img/galeria/ensaio-gaucho-1000.webp">
+                  <img src="img/galeria/ensaio-gaucho-540.webp" srcset="img/galeria/ensaio-gaucho-540.webp 540w, img/galeria/ensaio-gaucho-1000.webp 1000w" sizes="(min-width: 700px) 510px, 330px" width="540" height="360" loading="lazy" decoding="async" alt="Cão preto deitado sobre um tecido vermelho, com lenço no pescoço e um chapéu de aba larga ao lado.">
+                </button>
+                <figcaption>Ensaio de fotos com tema gaúcho</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="galeria__item">
+                <button class="galeria__botao" type="button" data-grande="img/galeria/atena-abraco-1000.webp">
+                  <img src="img/galeria/atena-abraco-540.webp" srcset="img/galeria/atena-abraco-540.webp 540w, img/galeria/atena-abraco-1000.webp 1000w" sizes="(min-width: 700px) 510px, 330px" width="540" height="360" loading="lazy" decoding="async" alt="Pessoa de camiseta rosa abraça a cadela Atena por trás, em um jardim com flores brancas.">
+                </button>
+                <figcaption>Atena, à espera de adoção</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="galeria__item">
+                <button class="galeria__botao" type="button" data-grande="img/galeria/gordo-sao-francisco-836.webp">
+                  <img src="img/galeria/gordo-sao-francisco-240.webp" srcset="img/galeria/gordo-sao-francisco-240.webp 240w, img/galeria/gordo-sao-francisco-480.webp 480w" sizes="(min-width: 700px) 227px, 147px" width="240" height="360" loading="lazy" decoding="async" alt="Cão preto e caramelo de bandana sentado ao lado da estátua de São Francisco, em frente a uma igreja.">
+                </button>
+                <figcaption>Gordo diante da estátua de São Francisco</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+
+        <div class="galeria__janela">
+          <ul class="galeria__faixa">
+            <li>
+              <figure class="galeria__item">
+                <button class="galeria__botao" type="button" data-grande="img/galeria/estela-ensaio-998.webp">
+                  <img src="img/galeria/estela-ensaio-240.webp" srcset="img/galeria/estela-ensaio-240.webp 240w, img/galeria/estela-ensaio-480.webp 480w" sizes="(min-width: 700px) 227px, 147px" width="240" height="360" loading="lazy" decoding="async" alt="Cadela idosa branca e caramelo, de lenço amarelo, em pé sobre um fundo vermelho.">
+                </button>
+                <figcaption>Estela, 16 anos, em ensaio de fotos</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="galeria__item">
+                <button class="galeria__botao" type="button" data-grande="img/galeria/costela-canil-1022.webp">
+                  <img src="img/galeria/costela-canil-640.webp" srcset="img/galeria/costela-canil-640.webp 640w, img/galeria/costela-canil-1022.webp 1022w" sizes="(min-width: 700px) 604px, 391px" width="640" height="360" loading="lazy" decoding="async" alt="Galgo branco e preto com bandana laranja, deitado sobre um cobertor vermelho dentro de um canil.">
+                </button>
+                <figcaption>Costela descansa enquanto espera um lar</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="galeria__item">
+                <button class="galeria__botao" type="button" data-grande="img/galeria/nega-parque-1030.webp">
+                  <img src="img/galeria/nega-parque-240.webp" srcset="img/galeria/nega-parque-240.webp 240w, img/galeria/nega-parque-480.webp 480w" sizes="(min-width: 700px) 227px, 147px" width="240" height="360" loading="lazy" decoding="async" alt="Cadela tigrada escura com bandana vermelha de bolinhas, em um parque arborizado.">
+                </button>
+                <figcaption>Nega em um passeio no parque</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="galeria__item">
+                <button class="galeria__botao" type="button" data-grande="img/galeria/tico-1200.webp">
+                  <img src="img/galeria/tico-270.webp" srcset="img/galeria/tico-270.webp 270w, img/galeria/tico-540.webp 540w" sizes="(min-width: 700px) 255px, 165px" width="270" height="360" loading="lazy" decoding="async" alt="Cão caramelo e branco deitado em um colchonete estampado, olhando para cima com a boca aberta.">
+                </button>
+                <figcaption>Tico, irmão do Bebê</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="galeria__item">
+                <button class="galeria__botao" type="button" data-grande="img/galeria/atena-brincando-998.webp">
+                  <img src="img/galeria/atena-brincando-240.webp" srcset="img/galeria/atena-brincando-240.webp 240w, img/galeria/atena-brincando-480.webp 480w" sizes="(min-width: 700px) 227px, 147px" width="240" height="360" loading="lazy" decoding="async" alt="Cadela branca com manchas cinza em pé nas patas traseiras, apoiada na mão de uma pessoa.">
+                </button>
+                <figcaption>Atena brincando no jardim</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="galeria__item">
+                <button class="galeria__botao" type="button" data-grande="img/galeria/pedrito-ensaio-1000.webp">
+                  <img src="img/galeria/pedrito-ensaio-540.webp" srcset="img/galeria/pedrito-ensaio-540.webp 540w, img/galeria/pedrito-ensaio-1000.webp 1000w" sizes="(min-width: 700px) 510px, 330px" width="540" height="360" loading="lazy" decoding="async" alt="Cão tigrado de focinho grisalho com lenço vermelho, sobre um fundo vermelho.">
+                </button>
+                <figcaption>Pedrito em ensaio de fotos</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="adote" id="adote" aria-labelledby="adote-titulo">
+      <div class="container">
+        <div class="adote__topo">
+          <div>
+            <h2 id="adote-titulo">Me adota?</h2>
+            <p>Estes animais foram retirados de situações de maus-tratos e esperam por uma família (lista de outubro de 2026).</p>
+          </div>
+          <ol class="passos">
+            <li>Escolha um pet e chame a ONG no WhatsApp.</li>
+            <li>Converse com a equipe em uma entrevista.</li>
+            <li>Visite o animal.</li>
+            <li>Assine o termo de responsabilidade e leve seu amigo para casa.</li>
+          </ol>
+        </div>
+
+        <div class="vitrine">
+          <div class="setas vitrine__setas">
+            <button class="seta" type="button" data-faixa="faixa-vitrine" data-direcao="-1" aria-label="Pets anteriores">
+              <svg class="icone" aria-hidden="true"><use href="#i-anterior"/></svg>
+            </button>
+            <button class="seta" type="button" data-faixa="faixa-vitrine" data-direcao="1" aria-label="Próximos pets">
+              <svg class="icone" aria-hidden="true"><use href="#i-proxima"/></svg>
+            </button>
+          </div>
+
+          <div class="faixa vitrine__faixa" id="faixa-vitrine" tabindex="0" role="region" aria-label="Pets para adoção">
+            <ul class="vitrine__lista">
+              <li>
+                <article class="pet">
+                  <img class="circulo pet__foto" src="img/pets/atena-280.webp" srcset="img/pets/atena-280.webp 280w, img/pets/atena-560.webp 560w" sizes="(min-width: 700px) 220px, 180px" width="280" height="280" loading="lazy" decoding="async" alt="Atena, cadela branca com manchas cinza, sentada na grama entre flores.">
+                  <h3 class="pet__nome">Atena</h3>
+                  <p class="pet__dados">Fêmea, 3 anos, porte médio</p>
+                  <p class="pet__fala">Sou super carismática e gosto muito de brincar.</p>
+                  <a class="pet__link" href="https://wa.me/555491212452?text=Ol%C3%A1!%20Quero%20saber%20como%20adotar%20a%20Atena." target="_blank" rel="noopener">Quero adotar a Atena</a>
+                </article>
+              </li>
+              <li>
+                <article class="pet">
+                  <img class="circulo pet__foto" src="img/pets/farelo-280.webp" srcset="img/pets/farelo-280.webp 280w, img/pets/farelo-560.webp 560w" sizes="(min-width: 700px) 220px, 180px" width="280" height="280" loading="lazy" decoding="async" alt="Farelo, cão branco de olhos claros, em close.">
+                  <h3 class="pet__nome">Farelo</h3>
+                  <p class="pet__dados">Macho, 3 anos, porte grande</p>
+                  <p class="pet__fala">Sou um gigante com um grande coração.</p>
+                  <a class="pet__link" href="https://wa.me/555491212452?text=Ol%C3%A1!%20Quero%20saber%20como%20adotar%20o%20Farelo." target="_blank" rel="noopener">Quero adotar o Farelo</a>
+                </article>
+              </li>
+              <li>
+                <article class="pet">
+                  <img class="circulo pet__foto" src="img/pets/estela-280.webp" srcset="img/pets/estela-280.webp 280w, img/pets/estela-560.webp 560w" sizes="(min-width: 700px) 220px, 180px" width="280" height="280" loading="lazy" decoding="async" alt="Estela, cadela idosa branca e caramelo, de lenço amarelo.">
+                  <h3 class="pet__nome">Estela</h3>
+                  <p class="pet__dados">Fêmea, 16 anos, porte médio</p>
+                  <p class="pet__fala">Sou uma senhorinha calma, dócil e gentil.</p>
+                  <a class="pet__link" href="https://wa.me/555491212452?text=Ol%C3%A1!%20Quero%20saber%20como%20adotar%20a%20Estela." target="_blank" rel="noopener">Quero adotar a Estela</a>
+                </article>
+              </li>
+              <li>
+                <article class="pet">
+                  <img class="circulo pet__foto" src="img/pets/bebe-280.webp" srcset="img/pets/bebe-280.webp 280w, img/pets/bebe-560.webp 560w" sizes="(min-width: 700px) 220px, 180px" width="280" height="280" loading="lazy" decoding="async" alt="Bebê, cão caramelo de peitoral azul, em pé dentro de casa.">
+                  <h3 class="pet__nome">Bebê</h3>
+                  <p class="pet__dados">Macho, 2 anos, porte grande</p>
+                  <p class="pet__fala">Procuro uma família que adote meu irmão Tico e eu juntos.</p>
+                  <a class="pet__link" href="https://wa.me/555491212452?text=Ol%C3%A1!%20Quero%20saber%20como%20adotar%20o%20Beb%C3%AA." target="_blank" rel="noopener">Quero adotar o Bebê</a>
+                </article>
+              </li>
+              <li>
+                <article class="pet">
+                  <img class="circulo pet__foto" src="img/pets/tico-280.webp" srcset="img/pets/tico-280.webp 280w, img/pets/tico-560.webp 560w" sizes="(min-width: 700px) 220px, 180px" width="280" height="280" loading="lazy" decoding="async" alt="Tico, cão caramelo e branco, olhando para cima com a boca aberta.">
+                  <h3 class="pet__nome">Tico</h3>
+                  <p class="pet__dados">Macho, 2 anos, porte grande</p>
+                  <p class="pet__fala">Sou irmão do Bebê e também espero uma família.</p>
+                  <a class="pet__link" href="https://wa.me/555491212452?text=Ol%C3%A1!%20Quero%20saber%20como%20adotar%20o%20Tico." target="_blank" rel="noopener">Quero adotar o Tico</a>
+                </article>
+              </li>
+              <li>
+                <article class="pet">
+                  <img class="circulo pet__foto" src="img/pets/nega-280.webp" srcset="img/pets/nega-280.webp 280w, img/pets/nega-560.webp 560w" sizes="(min-width: 700px) 220px, 180px" width="280" height="280" loading="lazy" decoding="async" alt="Nega, cadela tigrada escura de bandana vermelha, em um parque.">
+                  <h3 class="pet__nome">Nega</h3>
+                  <p class="pet__dados">Fêmea, 6 anos, porte médio</p>
+                  <p class="pet__fala">Sou meiga, dengosa e amo correr.</p>
+                  <a class="pet__link" href="https://wa.me/555491212452?text=Ol%C3%A1!%20Quero%20saber%20como%20adotar%20a%20Nega." target="_blank" rel="noopener">Quero adotar a Nega</a>
+                </article>
+              </li>
+              <li>
+                <article class="pet">
+                  <img class="circulo pet__foto" src="img/pets/pitoco-280.webp" srcset="img/pets/pitoco-280.webp 280w, img/pets/pitoco-335.webp 335w" sizes="(min-width: 700px) 220px, 180px" width="280" height="280" loading="lazy" decoding="async" alt="Pitoco, cão preto e branco sentado no jardim.">
+                  <h3 class="pet__nome">Pitoco</h3>
+                  <p class="pet__dados">Macho, 3 anos, porte médio</p>
+                  <p class="pet__fala">Sou um neném que ama carinho.</p>
+                  <a class="pet__link" href="https://wa.me/555491212452?text=Ol%C3%A1!%20Quero%20saber%20como%20adotar%20o%20Pitoco." target="_blank" rel="noopener">Quero adotar o Pitoco</a>
+                </article>
+              </li>
+              <li>
+                <article class="pet">
+                  <img class="circulo pet__foto" src="img/pets/franco-218.webp" width="218" height="218" loading="lazy" decoding="async" alt="Franco, cão branco de focinho curto, sentado na grama.">
+                  <h3 class="pet__nome">Franco</h3>
+                  <p class="pet__dados">Macho, 6 anos, porte grande</p>
+                  <p class="pet__fala">Sou cheio de energia e adoro brincar.</p>
+                  <a class="pet__link" href="https://wa.me/555491212452?text=Ol%C3%A1!%20Quero%20saber%20como%20adotar%20o%20Franco." target="_blank" rel="noopener">Quero adotar o Franco</a>
+                </article>
+              </li>
+              <li>
+                <article class="pet">
+                  <img class="circulo pet__foto" src="img/pets/cecilia-246.webp" width="246" height="246" loading="lazy" decoding="async" alt="Cecília, cadela tigrada deitada sobre grama sintética com um brinquedo.">
+                  <h3 class="pet__nome">Cecília</h3>
+                  <p class="pet__dados">Fêmea, 7 anos, porte grande</p>
+                  <p class="pet__fala">Gosto muito de brincar e de ganhar carinho.</p>
+                  <a class="pet__link" href="https://wa.me/555491212452?text=Ol%C3%A1!%20Quero%20saber%20como%20adotar%20a%20Cec%C3%ADlia." target="_blank" rel="noopener">Quero adotar a Cecília</a>
+                </article>
+              </li>
+              <li>
+                <article class="pet">
+                  <img class="circulo pet__foto" src="img/pets/gordo-280.webp" srcset="img/pets/gordo-280.webp 280w, img/pets/gordo-560.webp 560w" sizes="(min-width: 700px) 220px, 180px" width="280" height="280" loading="lazy" decoding="async" alt="Gordo, cão preto e caramelo de bandana, entre folhagens.">
+                  <h3 class="pet__nome">Gordo</h3>
+                  <p class="pet__dados">Macho, 6 anos, porte grande</p>
+                  <p class="pet__fala">Sou calmo e adoro brincar de bolinha.</p>
+                  <a class="pet__link" href="https://wa.me/555491212452?text=Ol%C3%A1!%20Quero%20saber%20como%20adotar%20o%20Gordo." target="_blank" rel="noopener">Quero adotar o Gordo</a>
+                </article>
+              </li>
+              <li>
+                <article class="pet">
+                  <img class="circulo pet__foto" src="img/pets/latrel-280.webp" srcset="img/pets/latrel-280.webp 280w, img/pets/latrel-560.webp 560w" sizes="(min-width: 700px) 220px, 180px" width="280" height="280" loading="lazy" decoding="async" alt="Latrel, pitbull cinza sorrindo em um canil de madeira.">
+                  <h3 class="pet__nome">Latrel</h3>
+                  <p class="pet__dados">Macho, 2 anos, porte grande</p>
+                  <p class="pet__fala">Faço adestramento e preciso ser o único animal da casa.</p>
+                  <a class="pet__link" href="https://wa.me/555491212452?text=Ol%C3%A1!%20Quero%20saber%20como%20adotar%20o%20Latrel." target="_blank" rel="noopener">Quero adotar o Latrel</a>
+                </article>
+              </li>
+              <li>
+                <article class="pet">
+                  <img class="circulo pet__foto" src="img/pets/bebezinho-280.webp" srcset="img/pets/bebezinho-280.webp 280w, img/pets/bebezinho-560.webp 560w" sizes="(min-width: 700px) 220px, 180px" width="280" height="280" loading="lazy" decoding="async" alt="Bebezinho, cão preto e branco sentado na grama.">
+                  <h3 class="pet__nome">Bebezinho</h3>
+                  <p class="pet__dados">Macho, 3 anos, porte médio</p>
+                  <p class="pet__fala">Sou tímido e me assusto com agitação.</p>
+                  <a class="pet__link" href="https://wa.me/555491212452?text=Ol%C3%A1!%20Quero%20saber%20como%20adotar%20o%20Bebezinho." target="_blank" rel="noopener">Quero adotar o Bebezinho</a>
+                </article>
+              </li>
+              <li>
+                <article class="pet">
+                  <img class="circulo pet__foto" src="img/pets/tonico-280.webp" srcset="img/pets/tonico-280.webp 280w, img/pets/tonico-560.webp 560w" sizes="(min-width: 700px) 220px, 180px" width="280" height="280" loading="lazy" decoding="async" alt="Tonico, cão caramelo deitado em um canil.">
+                  <h3 class="pet__nome">Tonico</h3>
+                  <p class="pet__dados">Macho, 6 anos, porte médio</p>
+                  <p class="pet__fala">Gosto de outros animais e de uma boa soneca.</p>
+                  <a class="pet__link" href="https://wa.me/555491212452?text=Ol%C3%A1!%20Quero%20saber%20como%20adotar%20o%20Tonico." target="_blank" rel="noopener">Quero adotar o Tonico</a>
+                </article>
+              </li>
+              <li>
+                <article class="pet">
+                  <img class="circulo pet__foto" src="img/pets/pedrito-280.webp" srcset="img/pets/pedrito-280.webp 280w, img/pets/pedrito-560.webp 560w" sizes="(min-width: 700px) 220px, 180px" width="280" height="280" loading="lazy" decoding="async" alt="Pedrito, cão tigrado de focinho grisalho com lenço vermelho.">
+                  <h3 class="pet__nome">Pedrito</h3>
+                  <p class="pet__dados">Macho, 6 anos, porte grande</p>
+                  <p class="pet__fala">Amo carinho e preciso ser o único pet da casa.</p>
+                  <a class="pet__link" href="https://wa.me/555491212452?text=Ol%C3%A1!%20Quero%20saber%20como%20adotar%20o%20Pedrito." target="_blank" rel="noopener">Quero adotar o Pedrito</a>
+                </article>
+              </li>
+              <li>
+                <article class="pet">
+                  <img class="circulo pet__foto" src="img/pets/costela-280.webp" srcset="img/pets/costela-280.webp 280w, img/pets/costela-560.webp 560w" sizes="(min-width: 700px) 220px, 180px" width="280" height="280" loading="lazy" decoding="async" alt="Costela, galgo branco e preto de bandana laranja, deitado em um cobertor vermelho.">
+                  <h3 class="pet__nome">Costela</h3>
+                  <p class="pet__dados">Macho, 5 anos, porte grande</p>
+                  <p class="pet__fala">Amo carinho e brinco com outros bichinhos.</p>
+                  <a class="pet__link" href="https://wa.me/555491212452?text=Ol%C3%A1!%20Quero%20saber%20como%20adotar%20o%20Costela." target="_blank" rel="noopener">Quero adotar o Costela</a>
+                </article>
+              </li>
+              <li>
+                <article class="pet">
+                  <img class="circulo pet__foto" src="img/pets/batman-280.webp" srcset="img/pets/batman-280.webp 280w, img/pets/batman-560.webp 560w" sizes="(min-width: 700px) 220px, 180px" width="280" height="280" loading="lazy" decoding="async" alt="Batman, cão marrom de orelhas caídas, em pé na grama.">
+                  <h3 class="pet__nome">Batman</h3>
+                  <p class="pet__dados">Macho, 5 anos, porte médio</p>
+                  <p class="pet__fala">Sou dócil, um pouco assustado, e prefiro ser o único pet.</p>
+                  <a class="pet__link" href="https://wa.me/555491212452?text=Ol%C3%A1!%20Quero%20saber%20como%20adotar%20o%20Batman." target="_blank" rel="noopener">Quero adotar o Batman</a>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="denuncie" id="denuncie" aria-labelledby="denuncie-titulo">
+      <div class="container denuncie__grade">
+        <div>
+          <h2 id="denuncie-titulo">Denuncie maus-tratos</h2>
+          <p class="lead">Maus-tratos não são apenas agressões físicas. É qualquer ato que cause dor, sofrimento ou afete o bem-estar de um animal.</p>
+          <h3>Alguns exemplos</h3>
+          <ul class="lista-circulos">
+            <li>Espancar, ferir ou envenenar.</li>
+            <li>Deixar sem comida ou água.</li>
+            <li>Manter preso sem espaço adequado ou exposto ao sol e à chuva.</li>
+            <li>Abandonar em vias públicas.</li>
+            <li>Negar tratamento veterinário.</li>
+          </ul>
+          <p class="denuncie__lei">Maus-tratos a animais é crime (Lei 9.605/1998, art. 32). Contra cães e gatos, a pena é de 2 a 5 anos de reclusão, multa e proibição da guarda (Lei 14.064/2020).</p>
+        </div>
+
+        <div class="denuncie__painel">
+          <h3>Como denunciar</h3>
+          <ol class="passos">
+            <li>Registre o que puder sem se colocar em risco: fotos, vídeos, data e horário.</li>
+            <li>Anote o endereço completo e um ponto de referência.</li>
+            <li>Envie tudo para a ONG pelo WhatsApp ou registre no formulário da Prefeitura.</li>
+          </ol>
+          <div class="denuncie__canais">
+            <a class="botao botao--cheio" href="https://wa.me/555491212452?text=Ol%C3%A1!%20Quero%20fazer%20uma%20den%C3%BAncia%20de%20maus-tratos." target="_blank" rel="noopener">
+              <svg class="icone" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              Denunciar pelo WhatsApp
+            </a>
+            <a class="botao botao--contorno" href="https://caxias.rs.gov.br/servicos/meio-ambiente/protecao-e-bem-estar-animal/denuncia-de-maus-tratos" target="_blank" rel="noopener">Formulário da Prefeitura</a>
+          </div>
+          <p class="denuncie__urgente">Se a agressão estiver acontecendo agora, ligue <a href="tel:190">190</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ajudar" id="como-ajudar" aria-labelledby="ajudar-titulo">
+      <div class="container">
+        <h2 id="ajudar-titulo">Como ajudar</h2>
+        <p class="lead">O trabalho da SRD depende de doações. São elas que pagam consultas, cirurgias, ração e lares temporários.</p>
+
+        <div class="ajudar__grade">
+          <article class="pix">
+            <h3>Doe pelo PIX</h3>
+            <p class="pix__rotulo">Chave PIX (e-mail)</p>
+            <p class="pix__chave" id="chave-pix">ongsrdoficial@gmail.com</p>
+            <button class="botao botao--claro" type="button" data-copiar="chave-pix">Copiar chave</button>
+            <p class="pix__status" role="status" aria-live="polite"></p>
+          </article>
+
+          <div class="ajudar__lista">
+            <article class="ajuda">
+              <h3>Doe ração e itens</h3>
+              <p>Ração, areia, sachê e brinquedos podem ser entregues na sede, sem horário marcado: Rua Sarmento Leite, 3090, Rio Branco. De segunda a sábado (exceto quinta), das 13h30 às 17h. Dúvidas: <a href="tel:+5554984233287">(54) 98423-3287</a>.</p>
+            </article>
+            <article class="ajuda">
+              <h3>Seja voluntário</h3>
+              <p>Quer doar seu tempo? Há espaço no brechó, nos eventos beneficentes e na divulgação dos animais para adoção.</p>
+              <a href="https://wa.me/555491212452?text=Ol%C3%A1!%20Quero%20ser%20volunt%C3%A1rio(a)%20da%20ONG%20SRD." target="_blank" rel="noopener">Quero ser voluntário</a>
+            </article>
+            <article class="ajuda">
+              <h3>Seja parceiro</h3>
+              <p>Empresas e profissionais podem apoiar com produtos, serviços, descontos ou campanhas, como fazem os parceiros da SRD.</p>
+              <a href="https://wa.me/555491212452?text=Ol%C3%A1!%20Quero%20apoiar%20a%20ONG%20SRD%20como%20parceiro." target="_blank" rel="noopener">Quero ser parceiro</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="brecho" id="brecho" aria-labelledby="brecho-titulo">
+      <div class="container brecho__grade">
+        <img class="brecho__foto"
+             src="img/brecho-fachada-480.webp"
+             srcset="img/brecho-fachada-480.webp 480w, img/brecho-fachada-960.webp 960w"
+             sizes="(min-width: 900px) 420px, 80vw"
+             width="480" height="640" loading="lazy" decoding="async"
+             alt="Fachada do Brechó SRD, com uma bandeira rosa da ONG ao lado da porta.">
+
+        <div class="brecho__texto">
+          <h2 id="brecho-titulo">Brechó SRD</h2>
+          <p class="lead">Peças com história e renda para os resgates.</p>
+          <p>O brechó nasceu de uma força-tarefa para pagar o tratamento da cadela de uma voluntária. A dívida foi quitada, o projeto continuou e hoje é a maior fonte de renda da ONG. Lá você encontra roupas, calçados, acessórios e itens decorativos, todos doados por apoiadores da causa animal.</p>
+          <dl class="brecho__info">
+            <div>
+              <dt>Endereço</dt>
+              <dd>Rua Sarmento Leite, 3090, Rio Branco, Caxias do Sul</dd>
+            </div>
+            <div>
+              <dt>Horário</dt>
+              <dd>Segunda, terça, quarta, sexta e sábado, das 13h30 às 17h</dd>
+            </div>
+            <div>
+              <dt>Aceita doações de</dt>
+              <dd>Roupas, calçados, móveis e itens de bazar</dd>
+            </div>
+          </dl>
+          <a class="botao botao--contorno" href="https://www.instagram.com/brecho_srd/" target="_blank" rel="noopener">
+            <svg class="icone" aria-hidden="true"><use href="#i-instagram"/></svg>
+            Ver peças no @brecho_srd
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="parceiros" id="parceiros" aria-labelledby="parceiros-titulo">
+      <div class="container">
+        <h2 id="parceiros-titulo">Parceiros</h2>
+        <p>Empresas e profissionais que apoiam o trabalho da SRD.</p>
+        <ul class="parceiros__lista">
+          <li><a href="https://www.instagram.com/centraldasfloresatacado/" target="_blank" rel="noopener"><img src="img/parceiros/central-das-flores.webp" width="458" height="149" loading="lazy" decoding="async" alt="Central das Flores"></a></li>
+          <li><a href="https://www.odontoclinica24h.com.br/" target="_blank" rel="noopener"><img src="img/parceiros/odonto-clinica.webp" width="284" height="160" loading="lazy" decoding="async" alt="Odonto Clínica"></a></li>
+          <li><a href="https://www.instagram.com/arena_parquedosol/" target="_blank" rel="noopener"><img src="img/parceiros/parque-do-sol.webp" width="168" height="160" loading="lazy" decoding="async" alt="Arena Parque do Sol"></a></li>
+          <li><a href="https://estudioamora.com.br/" target="_blank" rel="noopener"><img src="img/parceiros/estudio-amora.webp" width="196" height="160" loading="lazy" decoding="async" alt="Estúdio Amora"></a></li>
+          <li><a href="https://www.instagram.com/nutrigicelaschiavo/" target="_blank" rel="noopener"><img src="img/parceiros/gicela-schiavo.webp" width="280" height="160" loading="lazy" decoding="async" alt="Gicela Schiavo, nutricionista"></a></li>
+          <li><a href="https://www.instagram.com/naianaalves.docesfinos/" target="_blank" rel="noopener"><img src="img/parceiros/naiana-alves.webp" width="328" height="160" loading="lazy" decoding="async" alt="Naiana Alves, doces finos"></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contato" id="contato" aria-labelledby="contato-titulo">
+      <div class="container contato__grade">
+        <div>
+          <h2 id="contato-titulo">Contato</h2>
+          <p>Dúvidas, sugestões ou propostas de parceria? Escreva para a gente.</p>
+
+          <form class="formulario" novalidate>
+            <p class="formulario__aviso">Formulário de demonstração: as mensagens não são enviadas. Para denúncias e urgências, use o WhatsApp <a href="https://wa.me/555491212452?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20ONG%20SRD." target="_blank" rel="noopener">(54) 9121-2452</a>.</p>
+
+            <div class="campo">
+              <label for="nome">Nome</label>
+              <input id="nome" name="nome" type="text" autocomplete="name" required minlength="2" aria-describedby="nome-erro">
+              <p class="campo__erro" id="nome-erro"></p>
+            </div>
+            <div class="campo">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-erro">
+              <p class="campo__erro" id="email-erro"></p>
+            </div>
+            <div class="campo">
+              <label for="telefone">Telefone <span class="campo__opcional">(opcional)</span></label>
+              <input id="telefone" name="telefone" type="tel" autocomplete="tel" inputmode="tel" pattern="\(?[0-9]{2}\)? ?[0-9]{4,5}-?[0-9]{4}" aria-describedby="telefone-erro">
+              <p class="campo__erro" id="telefone-erro"></p>
+            </div>
+            <div class="campo">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="5" required minlength="10" aria-describedby="mensagem-erro"></textarea>
+              <p class="campo__erro" id="mensagem-erro"></p>
+            </div>
+
+            <button class="botao botao--cheio" type="submit">Enviar mensagem</button>
+            <p class="formulario__retorno" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <div class="contato__dados">
+          <h3>Fale com a SRD</h3>
+          <address>
+            <p><a class="contato__whats" href="https://wa.me/555491212452?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20ONG%20SRD." target="_blank" rel="noopener">
+              <svg class="icone" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              WhatsApp (54) 9121-2452
+            </a></p>
+            <p>Dúvidas sobre doações: <a href="tel:+5554984233287">(54) 98423-3287</a></p>
+            <p>E-mail: <a href="mailto:ongsrdoficial@gmail.com">ongsrdoficial@gmail.com</a></p>
+            <p>Rua Sarmento Leite, 3090, Rio Branco<br>Caxias do Sul (RS), CEP 95084-000</p>
+            <p>Atendimento de segunda a sábado (exceto quinta), das 13h30 às 17h.</p>
+          </address>
+
+          <h3>Redes sociais</h3>
+          <ul class="redes">
+            <li><a href="https://www.instagram.com/ongsrdoficial/" target="_blank" rel="noopener"><svg class="icone" aria-hidden="true"><use href="#i-instagram"/></svg>Instagram @ongsrdoficial</a></li>
+            <li><a href="https://www.facebook.com/ongsemracadefinidacxs/" target="_blank" rel="noopener"><svg class="icone" aria-hidden="true"><use href="#i-facebook"/></svg>Facebook ONG Sem Raça Definida</a></li>
+            <li><a href="https://www.instagram.com/brecho_srd/" target="_blank" rel="noopener"><svg class="icone" aria-hidden="true"><use href="#i-instagram"/></svg>Instagram do brechó @brecho_srd</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape__grade">
+      <div class="rodape__marca">
+        <span class="rodape__selo"><img src="img/logo-srd.webp" alt="ONG SRD" width="200" height="276" loading="lazy" decoding="async"></span>
+        <p>ONG SRD (Sem Raça Definida). Proteção animal em Caxias do Sul (RS).</p>
+      </div>
+
+      <nav class="rodape__menu" aria-label="Rodapé">
+        <ul>
+          <li><a href="#quem-somos">Quem somos</a></li>
+          <li><a href="#acoes">Ações</a></li>
+          <li><a href="#impacto">Impacto</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#adote">Adote</a></li>
+          <li><a href="#denuncie">Denuncie</a></li>
+          <li><a href="#como-ajudar">Como ajudar</a></li>
+          <li><a href="#brecho">Brechó</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <address class="rodape__endereco">
+        Rua Sarmento Leite, 3090, Rio Branco<br>
+        Caxias do Sul (RS), CEP 95084-000<br>
+        WhatsApp (54) 9121-2452<br>
+        ongsrdoficial@gmail.com
+      </address>
+    </div>
+
+    <div class="container rodape__base">
+      <p>© 2026 ONG SRD. Todos os direitos reservados. Fotos e logotipo: acervo da ONG SRD.</p>
+      <p>Projeto acadêmico (PIM UNIP), sem vínculo oficial com a ONG SRD.</p>
+      <a href="#inicio">Voltar ao topo</a>
+    </div>
+  </footer>
+
+  <dialog class="ampliar" aria-label="Foto ampliada">
+    <figure class="ampliar__figura">
+      <img class="ampliar__foto" src="" alt="">
+      <figcaption class="ampliar__legenda"></figcaption>
+    </figure>
+    <button class="ampliar__botao ampliar__fechar" type="button" aria-label="Fechar foto">
+      <svg class="icone" aria-hidden="true"><use href="#i-fechar"/></svg>
+    </button>
+    <button class="ampliar__botao ampliar__anterior" type="button" aria-label="Foto anterior">
+      <svg class="icone" aria-hidden="true"><use href="#i-anterior"/></svg>
+    </button>
+    <button class="ampliar__botao ampliar__proxima" type="button" aria-label="Próxima foto">
+      <svg class="icone" aria-hidden="true"><use href="#i-proxima"/></svg>
+    </button>
+  </dialog>
+</body>
+</html>
